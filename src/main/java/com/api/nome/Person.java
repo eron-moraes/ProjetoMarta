@@ -11,18 +11,15 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String cpf;
-    
-    private String carteiraHabilitacao;
-    private String atestadoAntecedentesCriminais;
+    private String cnh;
+    private String criminais;
     private String nomeFilho;
 
     
-    public Person(String nome, String cpf, String carteiraHabilitacao, String atestadoAntecedentesCriminais, String nomeFilho) {
+    public Person(String nome, String cnh, String criminais, String nomeFilho) {
         this.name = nome;
-        this.cpf = cpf;
-        this.carteiraHabilitacao = carteiraHabilitacao;
-        this.atestadoAntecedentesCriminais = atestadoAntecedentesCriminais;
+        this.cnh = cnh;
+        this.criminais = criminais;
         this.nomeFilho = nomeFilho;
     }
     
@@ -32,27 +29,21 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+
+	public String getCnh() {
+		return cnh;
 	}
 
-	public String getCarteiraHabilitacao() {
-		return carteiraHabilitacao;
+	public void setCnh(String cnh) {
+		this.cnh = cnh;
 	}
 
-	public void setCarteiraHabilitacao(String carteiraHabilitacao) {
-		this.carteiraHabilitacao = carteiraHabilitacao;
+	public String getCriminais() {
+		return criminais;
 	}
 
-	public String getAtestadoAntecedentesCriminais() {
-		return atestadoAntecedentesCriminais;
-	}
-
-	public void setAtestadoAntecedentesCriminais(String atestadoAntecedentesCriminais) {
-		this.atestadoAntecedentesCriminais = atestadoAntecedentesCriminais;
+	public void setCriminais(String criminais) {
+		this.criminais = criminais;
 	}
 
 	public String getNomeFilho() {

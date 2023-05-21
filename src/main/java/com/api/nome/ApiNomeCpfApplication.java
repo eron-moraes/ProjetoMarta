@@ -25,14 +25,13 @@ public class ApiNomeCpfApplication {
 	public static void menu() {
         Scanner scanner = new Scanner(System.in);
         String nome;
-        String cpf;
-        String carteiraHabilitacao;
-        String atestadoAntecedentesCriminais;
+        String cnh;
+        String criminais;
         String nomeFilho;
 
         while (true) {
-            System.out.println("=== API NOME CPF ===");
-            System.out.println("Selecione uma opção:");
+            System.out.println("*** BEM VINDO AO PROJETO CARONA! ***");
+            System.out.println("******* Selecione uma opção: *******");
             System.out.println("1. Adicionar pessoa");
             System.out.println("0. Sair");
 
@@ -42,28 +41,26 @@ public class ApiNomeCpfApplication {
                 case 1:
                     System.out.println("Digite o nome do pai:");
                     nome = scanner.next();
-                    System.out.println("Digite o CPF:");
-                    cpf = scanner.next();
-                    System.out.println("Digite a carteira de habilitação:");
-                    carteiraHabilitacao = scanner.next();
+                    System.out.println("Digite o número da sua carteira de habilitação:");
+                    cnh = scanner.next();                
                     System.out.println("Digite o atestado de antecedentes criminais:");
-                    atestadoAntecedentesCriminais = scanner.next();
+                    criminais = scanner.next();
                     System.out.println("Digite o nome do filho:");
                     nomeFilho = scanner.next();
-                    addPerson(nome, cpf, carteiraHabilitacao, atestadoAntecedentesCriminais, nomeFilho);
+                    addPerson(nome, cnh, criminais, nomeFilho);
                     break;
                 case 0:
-                    System.out.println("Encerrando a aplicação...");
+                    System.out.println("Obrigado por usar o sistema Marta!");
                     return;
                 default:
-                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("Opção inválida. Digite novamente.");
                     break;
             }
         }
     }
 
-    public static void addPerson(String nome, String cpf, String carteiraHabilitacao, String atestadoAntecedentesCriminais, String nomeFilho) {
-        Person person = new Person(nome, cpf, carteiraHabilitacao, atestadoAntecedentesCriminais, nomeFilho);
+    public static void addPerson(String nome, String cnh , String criminais, String nomeFilho) {
+        Person person = new Person(nome, cnh, criminais, nomeFilho);
         personService.savePerson(person);
         System.out.println("Pessoa adicionada com sucesso!");
     }
