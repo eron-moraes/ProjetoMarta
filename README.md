@@ -21,7 +21,8 @@ Logo após o cadastro, os dados são armazenados em um banco de dados MySQL e po
 
 ![sql](https://github.com/eron-moraes/ProjetoMarta/assets/110741158/7a1593f8-f185-490f-a366-f78e6b70f1fd)
 
-Assim foi finalizado o primeiro desafio da Kaspper Academy, escolhi fazer em linguagem Java por ter mais familiaridade com a linguagem e por mais projetos feitos em meu portifólio para me basear e criar essa API incrível e totalmente funcional.
+Assim foi finalizado o primeiro desafio da Kaspper Academy, escolhi fazer em linguagem Java por ter mais familiaridade com a linguagem e por ter mais projetos feitos em meu portifólio para me basear e criar essa API incrível e totalmente funcional.
+
 Agradeço ao professor Kheronn pelo seu incrível esforço em nos ensinar e a Kaspper por abrir as portas para o nosso aprendizado e crescimento pessoal e profissional.
  
  ![download](https://github.com/eron-moraes/ProjetoMarta/assets/110741158/d1a8fa6d-796b-4660-992e-02a5a807e38d)
