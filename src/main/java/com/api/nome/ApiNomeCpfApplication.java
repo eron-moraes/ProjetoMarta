@@ -46,8 +46,8 @@ public class ApiNomeCpfApplication {
                 case 1:
                     System.out.println("Digite o nome do pai/mãe:");
                     nome = scanner.nextLine();
-                    System.out.println("Digite o número da sua carteira de habilitação:");
-                    cnh = scanner.nextLine();
+                    System.out.println("Digite o número da sua carteira de habilitação (CNH):");
+                    cnh = scanner.nextLine().substring(0, 11);
                     System.out.println("Digite o atestado de antecedentes criminais:");
                     criminais = scanner.nextLine();
                     System.out.println("Digite o nome do filho:");
@@ -88,20 +88,20 @@ public class ApiNomeCpfApplication {
                     break;
                 case 2:
                     System.out.println("Favor, consultar os dados no banco MySQL!");
-                    menu();
-                default:
-                    System.out.println("Opção inválida. Digite novamente.");
                     break;
                 case 0:
                     System.out.println("Obrigado por usar o sistema Marta!");
+                    return;
+                default:
+                    System.out.println("Opção inválida. Digite novamente.");
                     break;
             }
         }
     }
 
-    public static void addPerson(String nome, String cnh , String criminais, String nomeFilho, String endereco, String placa, String nomeEscola, String disponibilidade) {
-    	Person person = new Person(nome, cnh, criminais, nomeFilho, endereco, placa, nomeEscola, disponibilidade);
-    	personService.savePerson(person);
-    	System.out.println("Pessoa adicionada com sucesso!");
-    	}
+    public static void addPerson(String nome, String cnh, String criminais, String nomeFilho, String endereco, String placa, String nomeEscola, String disponibilidade) {
+        Person person = new Person(nome, cnh, criminais, nomeFilho, endereco, placa, nomeEscola, disponibilidade);
+        personService.savePerson(person);
+        System.out.println("Pessoa adicionada com sucesso!");
     }
+}
