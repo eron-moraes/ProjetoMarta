@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.api.nome.ApiNomeCpfApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.599 s - in com.api.nome.ApiNomeCpfApplicationTests

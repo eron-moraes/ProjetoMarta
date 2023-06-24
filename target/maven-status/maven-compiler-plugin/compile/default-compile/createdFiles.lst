@@ -1,0 +1,6 @@
+com\api\nome\PersonService.class
+com\api\nome\SwaggerConfig.class
+com\api\nome\PersonRepository.class
+com\api\nome\PersonController.class
+com\api\nome\Person.class
+com\api\nome\ApiNomeCpfApplication.class
